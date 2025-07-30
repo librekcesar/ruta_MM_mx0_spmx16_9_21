@@ -47,11 +47,34 @@
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         z-index: 1000;
     }
+
+#google-maps-button {
+    position: absolute;
+    top: 200px; /*ajustar para que no choque con los otros elementos*/
+    right: 20px;
+    background-color: #4285F4;
+    color: rgb(235, 232, 213);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    z-index: 1000; /* Asegura que esté por encima del mapa */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
+    }
+
+    #google-maps-button:hover {
+        background-color: #104396; /* Un azul ligeramente más oscuro al pasar el mouse */
+    }        
     </style>
 </head>
 <body>
     <div id="map-title"> Ruta MX0-SPMX16-SPMX9-SPMX21</div>
     <div id="map"></div>
+    <a href="https://www.google.com/maps/dir/MexiquenseParks,+De+las+Torres+MZ+002,+Sin+Nombre,+Fuentes+del+Valle,+State+of+Mexico/Av.+R%C3%ADo+de+Guadalupe,+Preparatoria+3,+07450+Ciudad+de+M%C3%A9xico,+CDMX/Canal+Ma.+Candelaria+5,+Barrio+18,+16034+18,+CDMX/R%C3%ADo+Churubusco+76-38-38+38,+Puente+Blanco,+Iztapalapa,+09770+Ciudad+de+M%C3%A9xico,+CDMX/@19.4484889,-99.1320388,53420m/data=!3m1!1e3!4m31!4m30!1m10!1m1!1s0x85d1f4346f38af3d:0xba3ec842d93d553!2m2!1d-99.1422395!2d19.6415736!3m4!1m2!1d-99.0937297!2d19.6969515!3s0x85d1f35debfbf25b:0xcf56a906d7d89dd4!1m5!1m1!1s0x85d1fbd0667dde53:0xf858717b59eb9424!2m2!1d-99.0942074!2d19.472801!1m5!1m1!1s0x85ce017ada3b82a7:0x46bbca46137f3ad4!2m2!1d-99.1099155!2d19.2826151!1m5!1m1!1s0x85ce0264ebe18bb1:0x56725869f54b5dbf!2m2!1d-99.0643592!2d19.3290289!3e0!5m1!1e3?skid=c2d711a0-b02d-4f9b-83ca-e7d11b84256a&entry=tts&g_ep=EgoyMDI1MDcxMy4wKgBIAVAD" target="_blank" id="google-maps-button">
+        Ver en Google Maps
+    </a>
     <div id="map-legend" class="legend">
         <h4>Leyenda</h4>
         <div><span style="background-color: #d8180c; width: 20px; height: 20px; display: inline-block; border-radius: 50%;"></span> Nivel de riesgo de ruta (Alto)</div>
